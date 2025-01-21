@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .top{
+            display: inline-block;
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 100px;
+        }
+        .icon{
+            /* border: 1px solid black; */
+           box-sizing: border-box;
+             border: 20px; 
+             width: 20px;
+            height: 20px; 
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        .icon:hover{
+            cursor: pointer;
+            background-color: antiquewhite;
+        }
+        .topicname{
+            /* border: 1px solid black; */
+            display: inline-block;
+            margin-left: 300px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .company{
+            color: orange;
+        }
+        .slogan{
+            /* border: 1px solid black; */
+            width: 250px;
+            margin: auto;
+            color: rgba(0, 0, 0, 0.596);
+        }
+        .searchdiv{
+            /* border: 1px solid black; */
+            width: 18%;
+            height: 40px;
+            display: inline-block;
+            position: absolute;
+            top: 30px;
+            left: 1100px;
+        }
+        .search{
+            /* border: 1px solid black; */
+            width: 80%;
+            height: 40px;
+            border-radius: 30px;
+            vertical-align: middle;
+        }
+
+
+        .navbar{
+            display: inline-block;
+            border: 1px solid rgba(0, 0, 0, 0.359);
+            border-left: none;
+            border-radius: none;
+            border-bottom: none;
+            width: 100%;
+            height: 50px;
+        }
+        .list{
+            /* border: 1px solid black; */
+            width: 70%;
+            height: 30px;
+            margin-top: 30px;
+            margin-left: 250px;
+           
+        }
+        a{
+            /* border: 1px solid black; */
+            margin-left: 30px;
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+        }
+        a:hover{
+            background-color: rgb(255, 254, 254);
+            color: rgb(1, 170, 254);
+        }
+        .banner1{
+            width: 100%;
+            height: min-content; 
+        }
+        .banner{
+            /* position: sticky; */
+            margin-top: 30px;
+            
+        }
+.imgcontent{
+    position: absolute;
+    top: 400px;
+    left: 80px;
+    
+}
+.imgh{
+    font-size: 60px;
+    
+}
+.imgp{
+margin-top: 30px;
+font-size: 20px;
+font-family: sans-serif;
+color: rgba(0, 0, 0, 0.656);
+}
+.tap1{
+    margin-top: 40px;
+    width: 30%;
+    height: 50px;
+    background-color: rgb(178, 165, 165);
+    color: white;
+    font-size: 20px;
+}
+.tap2{
+    margin-top: 40px;
+    width: 30%;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+.content{
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 500px;
+    margin: auto;
+}
+.box1{
+    /* border: 1px solid black; */
+    width: 24%;
+    height: 300px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px; 
+    margin-bottom: 40px; 
+}
+.h3{
+    margin-top: 40px;
+    font-size: 30px;
+}
+.para{
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.601);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+.counting{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: rgba(72, 72, 75, 0.214);
+   
+}
+.countbox{
+    /* border: 1px solid black; */
+    width: 15%;
+    /* height: 140px; */
+    /* display: inline-block; */
+   text-align: center;
+   float: right ;
+   margin-right: 100px;
+   margin-top: 20px;
+}
+.number{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.numberpara{
+    color: rgba(107, 103, 103, 0.715);
+    text-transform: uppercase;
+}
+.banner2{
+    width: 40%;
+    height: min-content;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.section2{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.banner2img{
+    /* border: 1px solid black; */
+    width: 100%;
+}
+.banner2para{
+    /* border: 1px solid black; */
+}
+.banner2para{
+    position:absolute;
+    right: 200px;
+    width: 30%;
+    height: 550px;
+    top: 100px;
+}
+.welcome{
+    color: rgb(255, 162, 0);
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.publish{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.725);
+    line-height: 70px;
+}
+.welcome2{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.666);
+    margin-top: 30px;
+   line-height: 25px;
+}
+.view{
+    width: 40%;
+    height: 35px;
+    margin-left: 50px;
+    margin-top: 15px;
+    background-color: rgba(83, 81, 81, 0.821);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.book{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 150px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.bookheading1{
+margin-top: 20px;
+}
+.bookheading2{
+    margin-top: 30px;
+    font-size: 50px;
+    /* border: 1px solid black; */
+    width: 50%;
+    margin-left:170px;
+}
+.buk{
+    /* border: 1px solid black; */
+    margin-top:30px ;
+    color: orange;  
+}
+/* .bookdiv{
+    border: 1px solid black;
+    width: 100%;
+    height: 600px;
+}
+.bookcontent{
+    border: 1px solid black;
+    width: 50%;
+    height:auto;
+    display: inline-block;
+}
+.paragraph{
+    border: 1px solid black;
+    width: 30%;
+    height: 300px;
+}
+.bookimgdiv{
+    border: 1px solid black;
+    width: 30%;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+}
+.boximg{
+    border: 1px solid black;
+    width: 70%;
+    height: 300px;
+    display: inline-block;
+    position:relative ;
+    top: -300px;
+    left: 210px;
+} */
+
+        
+    </style>
+</head>
+<body>
+    <div class="top">
+<img class="icon" src="img/facebook-f-brands-solid.svg" alt="">
+<img class="icon" src="img/twitter-brands-solid.svg" alt="">
+<img class="icon" src="img/instagram-brands-solid.svg" alt="">
+<img class="icon" src="img/discord-brands-solid.svg" alt="">
+<h2 class="topicname">PUBLISHING <span class="company">COMPANY</span></h2>
+<P class="slogan">BOOK PUBLISHING COMPANY</P>
+</div>
+<div class="searchdiv">
+    <input class="search" type="search" placeholder="search">
+ </div>
+<div class="navbar">
+    <div class="list">
+    <ul>
+        <a href="#">HOME</a>
+    <a href="#">ABOUT</a>
+    <a href="#">COMING SOON</a>
+    <a href="#">BOOKS</a>
+    <a href="#">AUTHOR</a>
+    <a href="#">BLOG</a>
+    <a href="#">TOP SELLER</a>
+    <a href="#">CONTACT</a>
+
+    </ul>
+</div>
+</div>
+
+
+<div class="banner">
+    <img class="banner1" src="img/bg_1.jpg" alt="">
+
+<div class="imgcontent">
+    <h1 class="imgh">Good books don't give up  <br>all their secrets at once</h1>
+    <p class="imgp">A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
+    <button class="tap1">View All Books</button>
+    <button class="tap2">Explore Now</button>
+</div>
+</div>
+  
+<div class="content">
+    <div class="box1">
+        <img src="" alt="">
+        <h3 class="h3">Children's Book</h3>
+        <p class="para">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    </div>
+    <div class="box1">
+        <img src="" alt="">
+        <h3 class="h3">Romance</h3>
+        <p class="para">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    </div>
+    <div class="box1">
+        <img src="" alt="">
+        <h3 class="h3">Art & Architecture</h3>
+        <p class="para">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    </div>
+    <div class="box1">
+        <img src="" alt="">
+        <p class="h3">History</p>
+        <p class="para">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    </div>
+</div>
+<div class="counting">
+    <div class="countbox">
+        <p class="number">75,678</p>
+        <p class="numberpara">Active Readers</p>
+    </div>
+    <div class="countbox">
+        <p class="number">3040</p>
+        <p class="numberpara">Total Pages</p>
+    </div>
+    <div class="countbox">
+        <p class="number">283</p>
+        <p class="numberpara">Cup of coffee</p>
+    </div>
+    <div class="countbox">
+        <p class="number">14500</p>
+        <p class="numberpara">Facebook fans</p>
+    </div>
+</div>
+
+<div class="section2">
+    <div class="banner2img">
+        <img class="banner2" src="img/about-1.jpg" alt="">
+    </div>
+    <div class="banner2para">
+<p class="welcome"><span>Welcome To Publishing Company</span></p>
+<p class="publish">Publishing Company Created By Authors</p>
+<p class="welcome2">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. <br>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
+<button class="view">View All Our Authors</button>
+
+    </div>
+</div>
+
+
+<div class="book">
+    <p class="bookheading1"><span class="buk">BOOKS</span></p>
+    <p class="bookheading2">New Release</p>
+</div>
+
+<!-- <div class="bookdiv">
+<div class="bookcontent">
+    <div class="paragraph">
+    <span>$12.00</span>
+    <p>You Are Your Only Limit</p>
+    <p>By John Nathan Muller</p>
+    </div>
+    <div class="bookimgdiv">
+        <img class="boximg" src="img/book-1.jpg" alt="">
+    </div>
+</div>
+<div class="bookcontent">
+    <div class="paragraph">
+        <span>$12.00</span>
+    <p>You Are Your Only Limit</p>
+    <p>By John Nathan Muller</p>
+    </div>
+    <div class="bookimgdiv"><img class="boximg" src="img/book-2.jpg" alt=""></div>
+</div>
+<div class="bookcontent">
+    <div class="paragraph">
+        <span>$12.00</span>
+    <p>You Are Your Only Limit</p>
+    <p>By John Nathan Muller</p>
+    </div>
+    <div class="bookimgdiv"><img class="boximg" src="img/book-3 (1).jpg" alt=""></div>
+</div>
+<div class="bookcontent">
+    <div class="paragraph">
+        <span>$12.00</span>
+    <p>You Are Your Only Limit</p>
+    <p>By John Nathan Muller</p>
+    </div>
+    <div class="bookimgdiv"><img class="boximg" src="img/book-4.jpg" alt=""></div>
+</div>
+<div class="bookcontent">
+    <div class="paragraph">
+        <span>$12.00</span>
+    <p>You Are Your Only Limit</p>
+    <p>By John Nathan Muller</p>
+    </div>
+    <div class="bookimgdiv"><img class="boximg" src="img/book-5.jpg" alt=""></div>
+</div>
+<div class="bookcontent">
+    <div class="paragraph">
+        <span>$12.00</span>
+    <p>You Are Your Only Limit</p>
+    <p>By John Nathan Muller</p>
+    </div>
+    <div class="bookimgdiv"><img class="boximg" src="img/book-6.jpg" alt=""></div>
+</div>
+
+</div> -->
+
+
+</body>
+</html>
